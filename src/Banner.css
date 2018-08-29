@@ -1,0 +1,56 @@
+.Banner {
+  height: 80vh;
+  position: relative;
+  background-image: url('./banner-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+
+}
+
+.Banner-author {
+  font-size: 32px;
+  margin: 0 auto 25px;
+  width: 90%;
+  text-transform: uppercase;
+}
+
+.Banner-author span{
+  color: #fdf210;
+}
+
+.Banner-img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: -60px;
+}
+
+.Banner-link {
+  background: rgba(255, 255, 255, .2);
+  border: none;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (min-width: 569px) {
+  .Banner-author {
+    font-size: 48px;
+  }
+  .Banner-role {
+    font-size: 24px;
+  }
+}
