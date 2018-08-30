@@ -1,0 +1,97 @@
+.Blog-intro {
+  background: #282e3a;
+  color: #fdf210;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  padding: 75px 0;
+}
+
+.Post {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.Post-date {
+  color: #40c3f3;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.Post-title {
+  font-size: 12px;
+  color: #282e3a;
+}
+
+.Post-overlay {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #282e3a;
+  opacity: .9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: bottom .5s ease-in-out;
+}
+
+.Post-link {
+  font-size: 12px;
+  color: #40c3f3;
+  cursor: pointer;
+}
+
+.Post:hover .Post-overlay {
+  bottom: 0;
+}
+
+@media screen and (min-width: 569px) {
+  .Post {
+    height: 75px;
+  }
+
+  .Post-overlay {
+    bottom: -75px;
+  }
+
+  .Post-link {
+    font-size: 16px;
+  }
+
+  .Post-date {
+    font-size: 16px;
+  }
+  
+  .Post-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .Post {
+    height: 100px;
+  }
+
+  .Post-overlay {
+    bottom: -100px;
+  }
+
+  .Post-link {
+    font-size: 18px;
+  }
+
+  .Post-date {
+    font-size: 18px;
+  }
+  
+  .Post-title {
+    font-size: 18px;
+  }
+}

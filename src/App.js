@@ -4,6 +4,7 @@ import './App.css';
 import Banner from './Banner';
 import Expertise from './Expertise';
 import Projects from './Projects';
+import BlogPosts from './BlogPosts';
 
 import proj1 from './proj1.jpg';
 import proj2 from './proj2.jpg';
@@ -11,6 +12,29 @@ import proj3 from './proj3.jpg';
 import proj4 from './proj4.jpg';
 import proj5 from './proj5.jpg';
 import proj6 from './proj6.jpg';
+
+const blogPosts = [
+  {
+    timestamp: 1524311594,
+    title: 'Be macho, hunt bears and shit in the woods ',
+    id: '12dasdvr32'
+  },
+  {
+    timestamp: 1523793194,
+    title: ' Where can i learn how to play a guitar ? ',
+    id: 'sdfsdf2345gs'
+  },
+  {
+    timestamp: 1523533994,
+    title: 'Is there a law against marihuana ? ',
+    id: '1231fdsf'
+  },
+  {
+    timestamp: 1522669994,
+    title: 'Where can i learn how to play a guitar ? ',
+    id: '12q23rfvsd2'
+  },
+]
 
 const projects = [
   {
@@ -77,6 +101,7 @@ class App extends Component {
         <Banner author="Robert Szymanski" position="Junior React Dev"/>
         <Expertise/>
         <Projects projects={projects} show={this.state.show} showMore={this.showMore}/>
+        <BlogPosts posts={blogPosts}/>
       </div>
     );
   }
