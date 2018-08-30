@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Project.css'
 import location from './location.png';
 
@@ -16,6 +17,10 @@ const Project = ({project}) => {
       </div>
     </div>
   );
+}
+
+Project.propTypes = {
+  project: PropTypes.object.isRequired
 }
 
 export default Project;

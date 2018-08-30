@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import moment from 'moment';
 
 const Post = ({post}) => {
@@ -13,6 +14,8 @@ const Post = ({post}) => {
   );
 }
 
-
+Post.propTypes = {
+  post: PropTypes.object.isRequired
+}
 
 export default Post;
