@@ -1,0 +1,17 @@
+footer {
+  background: #282e3a;
+  color: #fdf210;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.Footer-message {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.Footer-socialMedia img {
+  width: 20px;
+  margin: 15px;
+  cursor: pointer;
+}

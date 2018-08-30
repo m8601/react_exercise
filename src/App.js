@@ -5,6 +5,7 @@ import Banner from './Banner';
 import Expertise from './Expertise';
 import Projects from './Projects';
 import BlogPosts from './BlogPosts';
+import Footer from './Footer';
 
 import proj1 from './proj1.jpg';
 import proj2 from './proj2.jpg';
@@ -102,6 +103,7 @@ class App extends Component {
         <Expertise/>
         <Projects projects={projects} show={this.state.show} showMore={this.showMore}/>
         <BlogPosts posts={blogPosts}/>
+        <Footer/>
       </div>
     );
   }
